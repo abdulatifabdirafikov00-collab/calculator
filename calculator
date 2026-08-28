@@ -1,0 +1,43 @@
+def calculator(a, b, amal):
+    try:
+        if amal == "+":
+            return a + b
+        elif amal == "-":
+            return a - b
+        elif amal == "*":
+            return a * b
+        elif amal == "/":
+            return a / b
+        else:
+            return "Noto'g'ri amal!"
+    except ZeroDivisionError:
+        return "0 ga bo'lish mumkin emas!"
+
+try:
+    name = "Abdulatif Abdirafikov"
+
+    ism = name.split()[0]
+    familiya = name.split()[1]
+
+    print("Ism:", ism)
+    print("Familiya:", familiya)
+
+except ValueError:
+    print("Xatolik yuz berdi!")
+except IndexError:
+    print("Ism va familiya topilmadi!")
+
+try:
+    son = 10
+    print(100 / son)
+
+except ZeroDivisionError:
+    print("0 ga bo'lish mumkin emas")
+
+except ValueError:
+    print("Faqat son kiriting")
+
+    # x - yangi fayl yaratadi
+# w - faylga yozadi
+# a - fayl oxiriga qo'shadi
+# r - faylni o'qiydi
